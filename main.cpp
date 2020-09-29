@@ -12,6 +12,7 @@ public:
         str = new char[l + 1];
         strcpy(str, s);
     }
+
     ~String() {
         delete[] str;
     }
