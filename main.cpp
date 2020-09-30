@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+
 
 /*for strcpy(), strcat(), strcmp() include <cstring>
 for exit()  (<process.h> is also allowed) include <cstdlib>*/
@@ -13,10 +13,8 @@ public:
         str = new char[l + 1];
         strcpy(str, s);
     }
-    ~String() {
-        delete[] str;
-    }
-    void ch_change() {
+    ~String() { delete[] str; }
+    void task6() {
         int i, l = strlen(str);
         if (l % 2 == 0) {
             for (i = 0; i <= l / 2; i++)
@@ -28,14 +26,26 @@ public:
             str[i - 1] = '\0';
         }
     }
+    void task7() {
+        for (int i = 1; str[i]; i++)
+            if (str[i - 1] == str[i])
+                str[i] = str[i - 1] = '*';
+    }
+    void task1() {
+        int i;
+        for (i = 0; str[i + 1]; i++);
+        for (int j = 0; str[j + 1]; j++)
+            if (*(str + j) == 'a')
+                *(str + j) = *(str + i);
+    }
     void get_str() {
         std::cout << str;
     }
 };
 
 int main() {
-    String s1 = "sadk. ad.ada ad. a eiead adas";
-    s1.ch_change();
+    String s1 = "sadk. ad.aa ad. a eiead adas";
+    s1.task7();
     s1.get_str();
     return 0;
 }
