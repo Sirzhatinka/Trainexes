@@ -39,19 +39,22 @@ public:
         }
     }
 
-    int Variant_3() {
-        for (int i = 0; i < line; i++) {
-            for (int j = 0; j < column; j++)
-                if (*(*(OutPtr + i) + j) > 0)
-                    break;
-            return i;
-        }
-    }
+    friend int Variant_3(Mtx mat);
 
     int* operator[](int i) {
         return *(OutPtr + i);
     }
 };
+int Variant_3(Mtx mat) {
+    for (int i = 0; i < mat.line; i++) {
+            for (int j = 0; j < mat.column; j++)
+                if (*(*(mat.OutPtr + i) + j) > 0)
+                    break;
+            return i;
+        }
+    std::cout << "\nCoincidence not found.\n";
+    return -1;
+}
 
 int main() {
     int m, n;
