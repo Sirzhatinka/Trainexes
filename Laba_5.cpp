@@ -6,16 +6,16 @@
 int pow(int , int);                               // to generate negative values (line 32)
 class Mtx {
     int** OutPtr;
-    int line, column;
+    int row, column;
 public:
-    Mtx(): OutPtr(nullptr), line(0), column(0) { }
-    Mtx(int m, int n): line(m), column(n) {
+    Mtx(): OutPtr(nullptr), row(0), column(0) { }
+    Mtx(int m, int n): row(m), column(n) {
         OutPtr = new int*[line];
         int i;
-        for (i = 0; i < line; i++)
+        for (i = 0; i < row; i++)
             *(OutPtr + i) = new int[column];
         std::cout << "Push the elements of the matrix:\n";
-        for (i = 0; i < line; i++)
+        for (i = 0; i < row; i++)
             for (int j = 0; j < column; j++)
                 std::cin >> *(*(OutPtr + i) + j);
     }
@@ -27,7 +27,7 @@ public:
 
     void Generate() {
         srand(time(NULL));
-        for (int i = 0; i < line; i++)
+        for (int i = 0; i < row; i++)
             for (int j = 0; j < column; j++)
                 *(*(OutPtr + i) + j) = rand() % 100 * pow(-1, rand());
     }
