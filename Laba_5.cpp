@@ -10,7 +10,7 @@ class Mtx {
 public:
     Mtx(): OutPtr(nullptr), row(0), column(0) { }
     Mtx(int m, int n): row(m), column(n) {
-        OutPtr = new int*[line];
+        OutPtr = new int*[row];
         int i;
         for (i = 0; i < row; i++)
             *(OutPtr + i) = new int[column];
