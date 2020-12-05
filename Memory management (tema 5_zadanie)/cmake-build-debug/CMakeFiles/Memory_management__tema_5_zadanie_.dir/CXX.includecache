@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionproj/Trainexes/Memory management (tema 5_zadanie)/main.cpp
+iostream
+-
+string
+-
+ctime
+-
+algorithm
+-
+

@@ -1,0 +1,3 @@
+E:/CLionproj/Trainexes/Memory management (tema 5_zadanie)/cmake-build-debug/CMakeFiles/Memory_management__tema_5_zadanie_.dir
+E:/CLionproj/Trainexes/Memory management (tema 5_zadanie)/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/CLionproj/Trainexes/Memory management (tema 5_zadanie)/cmake-build-debug/CMakeFiles/rebuild_cache.dir
