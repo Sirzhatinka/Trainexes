@@ -11,7 +11,7 @@ enum suff { gmail, yandex, mail };
 struct student {
     std::string fullName;
     int faculty;
-    uint8_t group;
+    size_t group;
     short email;
 
     student(): fullName(""), group(0), email(rand() % 3), faculty(0) { }
