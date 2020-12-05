@@ -18,7 +18,7 @@ int main() {
 //void anotherTask() {
 //    Queue<std::string> que;
 //
-//    size_t respond;
+//    uint8_t respond;
 //    do {
 //        std::cout << "Choose the action."
 //                     "\n1. Insert the element to the queue"
