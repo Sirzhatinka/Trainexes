@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionproj/Trainexes/Exceptions/dofile.cpp
+dofile.h
+E:/CLionproj/Trainexes/Exceptions/dofile.h
+
+E:/CLionproj/Trainexes/Exceptions/dofile.h
+iostream
+-
+fstream
+-
+string
+-
+
+E:/CLionproj/Trainexes/Exceptions/main.cpp
+iostream
+-
+string
+-
+dofile.h
+E:/CLionproj/Trainexes/Exceptions/dofile.h
+
